@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="password.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <h3 class="head1">
+                PASSWORD GENERATOR
+            </h3>
+
+            <div class="main1">
+                <input readonly placeholder="PASSWORD" class="password">
+                <i class="fa-regular fa-copy" id="copy"></i>
+            </div>
+
+            <div class="main2">
+                <div class="submain1">
+                    <p class="length">Password Length</p>
+                    <p class="num">10</p>
+                </div>
+
+                <input type="range" class="slider" id="myRange" min="0" max="20" step="1">
+
+                <div class="submain2">
+                    <div>
+                        <input type="checkbox" id="check1" class="check">
+                        <label for="check1">Include Uppercase Letters</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="check2" class="check">
+                        <label for="check2">Include Lowercase Letters</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="check3" class="check">
+                        <label for="check3">Include Numbers</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="check4" class="check">
+                        <label for="check4">Include Symbols</label>
+                    </div>
+                </div>
+
+                <div class="submain3">
+                    <p class="para3">Strength</p>
+                    <div class="circle"></div>
+                </div>
+
+                <button class="submain4">GENERATE PASSWORD</button>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="copy">Copied!</div>
+
+    <script src="https://kit.fontawesome.com/58a810656e.js"></script>
+    <script src="password.js"></script>
+</body>
+
+</html>
